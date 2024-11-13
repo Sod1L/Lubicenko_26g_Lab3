@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Любиченко Олексій 26Бд-комп</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Payment</h1>
+      <p class="subtitle">Choose payment method below</p>
+      <div class="container">
+        <div class="payment-methods">
+          <input
+            type="radio"
+            id="credit"
+            name="payment"
+            class="payment-radio"
+          />
+          <label for="credit" class="payment-option">
+            <img src="./images/Cardd.png" alt="Credit Card" />
+            <p>PAY WITH CREDIT CARD</p>
+          </label>
+          <input
+            type="radio"
+            id="paypal"
+            name="payment"
+            class="payment-radio"
+          />
+          <label for="paypal" class="payment-option">
+            <img src="./images/PayPal.png" alt="PayPal" />
+            <p>PAY WITH PAYPAL</p>
+          </label>
+          <input type="radio" id="bank" name="payment" class="payment-radio" />
+          <label for="bank" class="payment-option">
+            <img src="./images/amazon good.png" alt="Amazon" />
+            <p>PAY WITH AMAZON PAYMENT</p>
+          </label>
+        </div>
+      </div>
+      <form class="payment-form">
+        <div class="billing-info">
+          <h2><span class="step-number">1</span> Billing Info</h2>
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" placeholder="John Doe" />
+          <label for="billing-address">Billing Address</label>
+          <div class="billing-address">
+            <input type="text" id="billing-address" placeholder="Fyrton" />
+            <img
+              src="./images/geoloc.png"
+              alt="Location Icon"
+              class="geo-icon"
+            />
+          </div>
+          <div class="city-zip">
+            <div>
+              <label for="city">City</label>
+              <input type="text" id="city" placeholder="Stockholm" />
+            </div>
+            <div>
+              <label for="zip-code">Zip Code</label>
+              <input type="text" id="zip-code" placeholder="12804" />
+            </div>
+          </div>
+          <label for="country">Country</label>
+          <select id="country">
+            <option value="Sweden">Sweden</option>
+          </select>
+        </div>
+        <div class="credit-card-info">
+          <h2><span class="step-number">2</span> Credit Card Info</h2>
+          <label for="cardholder-name">Cardholder's Name</label>
+          <input type="text" id="cardholder-name" placeholder="John Doe" />
+          <label for="card-number">Card Number</label>
+          <input
+            type="text"
+            id="card-number"
+            placeholder="5645-6456-7655-0456"
+          />
+          <div class="expiration">
+            <div>
+              <label for="exp-month">Exp. Month</label>
+              <select id="exp-month">
+                <option value="12">12</option>
+              </select>
+            </div>
+            <div>
+              <label for="exp-year">Exp. Year</label>
+              <select id="exp-year">
+                <option value="18">18</option>
+              </select>
+            </div>
+          </div>
+          <label for="cvc-number">CVC Number</label>
+          <input type="text" id="cvc-number" placeholder="468" />
+      </form>
+           <form>
+    </div>
+        <div class="buttons">
+          <button type="submit" class="return-button">RETURN TO STORE</button>
+          <a href="index.html" class="back-to-shipping">BACK TO SHIPPING</a>
+          <button type="submit" class="proceed-button">PROCCED</button>
+    </div>
+           </form>
+  </body>
+</html>
